@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', 'Front\HomePageController@index');
+Route::get('/', 'Front\HomePageController@index')->name('front.homepage');
