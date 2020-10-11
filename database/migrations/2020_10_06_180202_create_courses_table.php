@@ -23,6 +23,7 @@ class CreateCoursesTable extends Migration
             $table->text('desc');
             $table->integer('price');
             $table->string('img');
+            $table->string('name');
             $table->timestamps();
         });
     }
