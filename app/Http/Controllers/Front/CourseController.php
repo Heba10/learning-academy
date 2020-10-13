@@ -19,4 +19,16 @@ class CourseController extends Controller
 
 
     }
+
+    public function show($id,$c_id){
+        //$data['course'] =Course::where('id',$c_id)->first();
+      
+        $data['course'] =Course::findOrFail($c_id);
+
+        return view('front.courses.show')->with($data);
+
+    }
+
+
+
 }

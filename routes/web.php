@@ -19,4 +19,5 @@ Route::get('/', function () {
 
 Route::get('/', 'Front\HomePageController@index')->name('front.homepage');
 
-Route::get('/courses/cat/{id}', 'Front\CourseController@cat')->name('front.cat');
+Route::get('/cat/{id}', 'Front\CourseController@cat')->name('front.cat');
+Route::get('/cat/{id}/course/{c_id}', 'Front\CourseController@show')->name('front.show');

@@ -9,7 +9,7 @@
                     <div class="breadcrumb_iner text-center">
                         <div class="breadcrumb_iner_item">
                             <h2>Our Courses</h2>
-                            <p>Homepage<span>/</span>Courses<span>/</span>Category<span>/</span>{{$cat->name}}</p>
+                            <p>Homepage<span>/</span>Courses<span>/</span>{{$cat->name}}</p>
                         </div>
                     </div>
                 </div>
