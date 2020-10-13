@@ -21,3 +21,5 @@ Route::get('/', 'Front\HomePageController@index')->name('front.homepage');
 
 Route::get('/cat/{id}', 'Front\CourseController@cat')->name('front.cat');
 Route::get('/cat/{id}/course/{c_id}', 'Front\CourseController@show')->name('front.show');
+
+Route::get('/contact', 'Front\ContactController@index')->name('front.contact');
