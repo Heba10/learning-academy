@@ -13,13 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::namespace('Front')->group(function(){
+
+Route::get('/', 'HomePageController@index')->name('front.homepage');
+
+Route::get('/cat/{id}', 'CourseController@cat')->name('front.cat');
+Route::get('/cat/{id}/course/{c_id}', 'CourseController@show')->name('front.show');
+
+Route::get('/contact', 'ContactController@index')->name('front.contact');
 });
 
-Route::get('/', 'Front\HomePageController@index')->name('front.homepage');
 
-Route::get('/cat/{id}', 'Front\CourseController@cat')->name('front.cat');
-Route::get('/cat/{id}/course/{c_id}', 'Front\CourseController@show')->name('front.show');
+Route::namespace('Admin')->group(function(){
+    Route::get('/dashboard', 'HomeController@index')->name('admin.home');
 
-Route::get('/contact', 'Front\ContactController@index')->name('front.contact');
+
+
+
+
+});
