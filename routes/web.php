@@ -24,8 +24,13 @@ Route::get('/contact', 'ContactController@index')->name('front.contact');
 });
 
 
-Route::namespace('Admin')->group(function(){
-    Route::get('/dashboard', 'HomeController@index')->name('admin.home');
+Route::namespace('Admin')->prefix('dashboard')->group(function(){
+    
+    Route::get('/login', 'AuthController@login')->name('admin.login');
+    Route::post('/do-login', 'AuthController@doLogin')->name('admin.doLogin');
+    Route::get('//logout', 'AuthController@logout')->name('admin.logout');
+
+    Route::get('/', 'HomeController@index')->name('admin.home');
 
 
 
