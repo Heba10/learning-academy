@@ -43,7 +43,13 @@ Route::namespace('Admin')->prefix('dashboard')->group(function(){
     Route::post('/cats/update', 'CatController@update')->name('admin.cats.update');
     Route::get('/cats/delete/{id}', 'CatController@delete')->name('admin.cats.delete');
 
+    Route::get('/trainers', 'TrainerController@index')->name('admin.trainers.index');
 
+    Route::get('/trainers/create', 'TrainerController@create')->name('admin.trainers.create');
+    Route::post('/trainers/store', 'TrainerController@store')->name('admin.trainers.store');
+    Route::get('/trainers/edit/{id}', 'TrainerController@edit')->name('admin.trainers.edit');
+    Route::post('/trainers/update', 'TrainerController@update')->name('admin.trainers.update');
+    Route::get('/trainers/delete/{id}', 'TrainerController@delete')->name('admin.trainers.delete');
 
 
 });

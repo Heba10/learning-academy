@@ -24,6 +24,12 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="{{ route('admin.cats.index') }}">Categories</a>
+        
+
+      </li>
+      <li class="nav-item active">
+
+      <a class="nav-link" href="{{ route('admin.trainers.index') }}">Trainers</a>
       </li>
     
    
