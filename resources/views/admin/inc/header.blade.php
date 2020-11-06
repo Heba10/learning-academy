@@ -36,6 +36,13 @@
 
 <a class="nav-link" href="{{ route('admin.courses.index') }}">Courses</a>
 </li>
+
+
+
+<li class="nav-item active">
+
+<a class="nav-link" href="{{ route('admin.students.index') }}">Students</a>
+</li>
     </ul>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">

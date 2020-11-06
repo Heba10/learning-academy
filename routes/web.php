@@ -63,6 +63,16 @@ Route::namespace('Admin')->prefix('dashboard')->group(function(){
 
 
 
+    Route::get('/students', 'StudentController@index')->name('admin.students.index');
+
+    Route::get('/students/create', 'StudentController@create')->name('admin.students.create');
+    Route::post('/students/store', 'StudentController@store')->name('admin.students.store');
+    Route::get('/students/edit/{id}', 'StudentController@edit')->name('admin.students.edit');
+    Route::post('/students/update', 'StudentController@update')->name('admin.students.update');
+    Route::get('/students/delete/{id}', 'StudentController@delete')->name('admin.students.delete');
+
+
+
 });
 
 
