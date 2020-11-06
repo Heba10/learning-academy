@@ -32,7 +32,10 @@
       <a class="nav-link" href="{{ route('admin.trainers.index') }}">Trainers</a>
       </li>
     
-   
+      <li class="nav-item active">
+
+<a class="nav-link" href="{{ route('admin.courses.index') }}">Courses</a>
+</li>
     </ul>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">

@@ -50,6 +50,17 @@ Route::namespace('Admin')->prefix('dashboard')->group(function(){
     Route::get('/trainers/edit/{id}', 'TrainerController@edit')->name('admin.trainers.edit');
     Route::post('/trainers/update', 'TrainerController@update')->name('admin.trainers.update');
     Route::get('/trainers/delete/{id}', 'TrainerController@delete')->name('admin.trainers.delete');
+    
+
+
+    Route::get('/courses', 'CourseController@index')->name('admin.courses.index');
+
+    Route::get('/courses/create', 'CourseController@create')->name('admin.courses.create');
+    Route::post('/courses/store', 'CourseController@store')->name('admin.courses.store');
+    Route::get('/courses/edit/{id}', 'CourseController@edit')->name('admin.courses.edit');
+    Route::post('/courses/update', 'CourseController@update')->name('admin.courses.update');
+    Route::get('/courses/delete/{id}', 'CourseController@delete')->name('admin.courses.delete');
+
 
 
 });
