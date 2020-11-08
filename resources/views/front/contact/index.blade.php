@@ -32,7 +32,11 @@
           <h2 class="contact-title">Get in Touch</h2>
         </div>
         <div class="col-lg-8">
-          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+
+        @include('front.includes.errors')
+          <form class="form-contact contact_form" action="{{route('front.message.contact')}}"  id="contactForm" novalidate="novalidate">
+           @csrf
+           
             <div class="row">
               <div class="col-12">
                 <div class="form-group">
