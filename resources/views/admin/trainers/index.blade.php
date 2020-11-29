@@ -5,7 +5,7 @@
 <div class="container p-5 m-5">
 <div class="d-flex justify-content-between mb-3">
 <h6>Trainers</h6>
-<a class="btn btn-sm btn-primary" href="{{route('admin.trainers.create')}}">Add Category</a>
+<a class="btn btn-sm btn-primary" href="{{route('admin.trainers.create')}}">Add Trainer</a>
 </div>
 <table class="table">
   <thead>
