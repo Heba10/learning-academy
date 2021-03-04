@@ -33,7 +33,7 @@
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
                       
-                      <a class="navbar-brand" href="{{route('front.homepage')}}"> <img src="{{asset('uploads/settings/'. $sett->logo )}}" width="50" height="47"alt="logo"> </a>
+                      <a class="navbar-brand" href="{{route('front.homepage')}}"> <img src="{{asset('uploads/settings/' )}}" width="50" height="47"alt="logo"> </a>
                       
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
