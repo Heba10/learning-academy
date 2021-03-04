@@ -4,7 +4,7 @@
             <div class="row justify-content-between">
                 <div class="col-sm-6 col-md-4 col-xl-3">
                     <div class="single-footer-widget footer_1">
-                        <a href="{{route('front.homepage')}}"> <img src="{{asset('uploads/settings/'. $sett->logo )}}" alt=""> </a>
+                        <a href="{{route('front.homepage')}}"> <img src="{{asset('uploads/settings/')}}" alt=""> </a>
                         <p>But when shot real her. Chamber her one visite removal six
                             sending himself boys scot exquisite existend an </p>
                         <p>But when shot real her hamber her </p>
