@@ -34,9 +34,9 @@
                             </div>
                         </form>
                         <div class="social_icon">
-                            <a href="{{$sett->fb}}"> <i class="ti-facebook"></i> </a>
-                            <a href="{{$sett->twitter}}"> <i class="ti-twitter-alt"></i> </a>
-                            <a href="{{$sett->insta}}"> <i class="ti-instagram"></i> </a>
+                            <a href="#"> <i class="ti-facebook"></i> </a>
+                            <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                            <a href="#"> <i class="ti-instagram"></i> </a>
                           
                         </div>
                     </div>
@@ -45,9 +45,9 @@
                     <div class="single-footer-widget footer_2">
                         <h4>Contact us</h4>
                         <div class="contact_info">
-                            <p><span> Address :</span> {{$sett->address .','. $sett->city }} </p>
-                            <p><span> Phone :</span> {{$sett->phone }}</p>
-                            <p><span> Email : </span>{{$sett->email }} </p>
+                            <p><span> Address :</span></p>
+                            <p><span> Phone :</span> </p>
+                            <p><span> Email : </span> </p>
                         </div>
                     </div>
                 </div>
